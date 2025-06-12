@@ -1,0 +1,1 @@
+This is a simple lead management web app built using HTML, CSS, and JavaScript. It allows users to add leads with name, email, and status. Leads are displayed in a table and can be filtered by status. The app uses localStorage to persist data across page refreshes. The layout is responsive and user-friendly.

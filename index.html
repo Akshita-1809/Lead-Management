@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lead Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Lead Management System</h1>
+
+  <form id="leadForm">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <select id="status">
+      <option value="New">New</option>
+      <option value="Contacted">Contacted</option>
+      <option value="Qualified">Qualified</option>
+    </select>
+    <button type="submit">Add Lead</button>
+  </form>
+
+  <div>
+    <label for="filter">Filter by Status:</label>
+    <select id="filter">
+      <option value="All">All</option>
+      <option value="New">New</option>
+      <option value="Contacted">Contacted</option>
+      <option value="Qualified">Qualified</option>
+    </select>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th><th>Email</th><th>Status</th><th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="leadTableBody">
+      <!-- Leads will appear here -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
